@@ -5,20 +5,26 @@
       android:versionName="1.0">
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name=".TodoListActivity"
-                  android:label="@string/app_name">
+                  android:label="Todo List">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
          <activity android:name=".TodoListProgramaticallyActivity"
-                  android:label="@string/app_name">
+                  android:label="Todo List Programatically">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+         <activity android:name="br.techs.GallerySnippetActivity"
+                  android:label="Gallery Snippet">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
     <uses-sdk android:minSdkVersion="7" />
 

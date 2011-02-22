@@ -6,17 +6,20 @@ import java.util.List;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class TodoListActivity extends Activity {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+
 		setContentView(R.layout.main);
 
 		final EditText text = (EditText) findViewById(R.id.text);
@@ -25,8 +28,7 @@ public class TodoListActivity extends Activity {
 
 		final List<String> data = new ArrayList<String>();
 		final ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-				getApplicationContext(), android.R.layout.simple_list_item_1,
-				data);
+				getApplicationContext(), R.layout.row, data);
 		list.setAdapter(adapter);
 		button.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -37,6 +39,15 @@ public class TodoListActivity extends Activity {
 				String txt = text.getText().toString();
 				data.add(txt);
 				adapter.notifyDataSetChanged();
+			}
+		});
+
+		list.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				Toast.makeText(TodoListActivity.this, "CLICKED",
+						Toast.LENGTH_LONG);
 			}
 		});
 	}
