@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+import br.techs.R;
 
 public class TodoListActivity extends Activity {
 	/** Called when the activity is first created. */

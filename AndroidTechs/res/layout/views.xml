@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<TextView android:id="@+id/listView" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:text="Hello Views!"
+		android:textSize="28px" android:textColor="#12FF88" android:textStyle="italic|bold" />
+	<EditText android:id="@+id/textView" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:text="..."
+		android:textSize="28px" android:textColor="#12FF88" android:textStyle="italic|bold" />
+	<Button android:id="@+id/button" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:text="Click!"
+		android:textSize="28px" android:textColor="#12FF88" android:textStyle="italic|bold" />
+	<CheckBox android:id="@+id/check" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:text="Check it!"
+		android:textSize="28px" android:textColor="#12FF88" android:textStyle="italic|bold" />
+	<ToggleButton android:id="@+id/tbutton"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:textOn="Ligado" android:textOff="Desligado" android:textSize="28px"
+		android:textColor="#12FF88" android:textStyle="italic|bold" />
+	<RadioGroup android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<RadioButton android:id="@+id/r1button"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:text="Opção 1" android:textSize="28px" android:textColor="#12FF88"
+			android:textStyle="italic|bold" />
+		<RadioButton android:id="@+id/r2button"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:text="Opção 2" android:textSize="28px" android:textColor="#12FF88"
+			android:textStyle="italic|bold" />
+	</RadioGroup>
+</LinearLayout>

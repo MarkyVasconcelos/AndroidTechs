@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
+import br.techs.R;
 
 public class TodoListProgramaticallyActivity extends Activity {
 	/** Called when the activity is first created. */

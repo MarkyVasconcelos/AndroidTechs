@@ -17,7 +17,6 @@ import android.widget.Gallery;
 import android.widget.Gallery.LayoutParams;
 import android.widget.ImageView;
 import android.widget.TextView;
-import br.teaching.android.R;
 
 public class GallerySnippetActivity extends Activity {
 	/** Called when the activity is first created. */
